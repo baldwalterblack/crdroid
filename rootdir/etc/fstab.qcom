@@ -29,3 +29,4 @@ vendor                                                   /vendor              ex
 odm                                                      /odm                 ext4    ro,barrier=1                                                                                    wait,logical,first_stage_mount
 /dev/block/bootdevice/by-name/boot                       /boot                emmc    defaults                                                                                        defaults
 /dev/block/bootdevice/by-name/recovery                   /recovery            emmc    defaults                                                                                        recoveryonly
+/dev/block/by-name/logdump                               /metadata            ext4    noatime,nosuid,nodev,discard,data=journal,commit=1                                              wait,check,formattable,first_stage_mount
